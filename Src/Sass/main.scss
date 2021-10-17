@@ -1,0 +1,10 @@
+@import "./variable.scss";
+@import "../Bootstrap/css/bootstrap.css";
+@import "./Module/landing_page.scss";
+@import "./Module/responsive.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font_family;
+}

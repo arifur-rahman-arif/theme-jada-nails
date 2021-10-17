@@ -1,0 +1,17 @@
+{
+    "name": "ar.arif/theme-jada-nails",
+    "description": "Client landing page theme",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Arifur Rahman Arif",
+            "email": "dev.ar.arif@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "JadaNails\\Includes\\": "Includes/"
+        }
+    }
+}
