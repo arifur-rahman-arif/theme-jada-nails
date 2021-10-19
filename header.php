@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jada Nails</title>
-    <link rel="shortcut icon" href="<?php echo JADA_NAILS_URL . 'Public/Assets/logo.svg' ?>" />
+    <link rel="shortcut icon" href="<?php echo get_site_icon_url() ?>" />
     <title><?php bloginfo('name');?><?php wp_title('|')?></title>
     <?php wp_head()?>
 </head>
@@ -15,7 +15,7 @@
     <header>
         <div class="backgroud_overlay"></div>
         <div class="logo_section">
-            <a href="#">
+            <a href="<?php echo site_url() ?>">
                 <img src="<?php echo JADA_NAILS_URL . 'Public/Assets/logo.svg' ?>" alt="header_logo" />
             </a>
         </div>
@@ -50,45 +50,15 @@
             <div class="hamburger_menu">
                 <span class="deskop_menu active">
                     <i class="fas fa-bars"></i>
-                    <!-- <img src="./Public/Assets/Icons/hamburger_menu.svg" alt="" /> -->
                 </span>
                 <span class="mobile_menu">
                     <i class="fas fa-times"></i>
-                    <!-- <img src="./Public/Assets/Icons/hamburger_close.svg" alt="" /> -->
                 </span>
             </div>
         </nav>
 
         <div class="primary_menu">
-            <ul class="overlay_menu">
-                <li class="mobile_version">
-                    <ul class="links">
-                        <li><a href="">Anmelden</a></li>
-                        <li><a href="">Beratung?</a></li>
-                        <div class="mailbox"><i class="fas fa-envelope"></i></div>
-                    </ul>
-                    <ul class="second_list">
-                        <li>
-                            <a href=""><i class="fas fa-search"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-user-circle"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-shopping-cart"></i></a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Gele</a></li>
-                <li><a href="#">Geräte und zubehör</a></li>
-                <li><a href="#">Werkzeuge, Arbeitshilfen ...</a></li>
-                <li><a href="#">Nail-Art</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Sonstiges</a></li>
-                <li><a href="#">Top-Angebote</a></li>
-                <li><a href="#">Schulungen</a></li>
-                <li><a href="#">Studio-Einrichtung</a></li>
-            </ul>
+            <?php displayHeaderMenu()?>
         </div>
     </header>
     <!-- End of header -->

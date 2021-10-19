@@ -33,12 +33,7 @@
 
             <div class="right_side">
                 <h3>Weiteres</h3>
-                <ul class="footer_menu">
-                    <li><a href="#">Lieferbedingungen</a></li>
-                    <li><a href="#">Widerrufsbelehrung</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
+                <?php displayFooterMenu()?>
             </div>
         </div>
 

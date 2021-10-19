@@ -50,91 +50,12 @@
 <!-- Post box container -->
 <div class="post_box">
     <h1>Kategorien</h1>
-    <img class="post_bg_waves wave_1" src="./Public/Assets/wave_1.svg" alt="" />
-    <img class="post_bg_waves wave_2" src="./Public/Assets/wave_2.svg" alt="" />
-    <img class="post_bg_waves wave_3" src="./Public/Assets/wave_2.svg" alt="" />
+    <img class="post_bg_waves wave_1" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_1.svg' ?>" alt="" />
+    <img class="post_bg_waves wave_2" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_2.svg' ?>" alt="" />
+    <img class="post_bg_waves wave_3" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_2.svg' ?>" alt="" />
 
     <div class="web_box_container">
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_01.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_02.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_03.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_04.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_05.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_03.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_07.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_08.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
-
-        <!-- Single post box -->
-        <div class="boxes">
-            <a href="" class="img_box">
-                <img src="./Public/Assets/Images/Kategorie_09.jpg" alt="" />
-            </a>
-            <h3>Imgae Title</h3>
-        </div>
-        <!-- end of single post box -->
+        <?php displayPosts()?>
     </div>
 </div>
 <!-- End of post box container -->
@@ -191,7 +112,7 @@
         <!-- Shipment bopx -->
         <div class="icon_box">
             <div class="icon">
-                <img src="./Public/Assets/Icons/shipment_box.svg" alt="" />
+                <img src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/shipment_box.svg' ?>" alt="" />
             </div>
             <p>Versandkosten freie Lieferung innerhalb Deutschlands</p>
         </div>
@@ -200,7 +121,7 @@
         <!-- Shipment bopx -->
         <div class="icon_box">
             <div class="icon">
-                <img src="./Public/Assets/Icons/truck.svg" alt="" />
+                <img src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/truck.svg' ?>" alt="" />
             </div>
             <p>Telefonische Verkaufsberatung</p>
         </div>
@@ -209,7 +130,7 @@
         <!-- Shipment bopx -->
         <div class="icon_box">
             <div class="icon">
-                <img src="./Public/Assets/Icons/telephone.svg" alt="" />
+                <img src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/telephone.svg' ?>" alt="" />
             </div>
             <p>Transparente und faire Versandkosten</p>
         </div>
@@ -218,7 +139,7 @@
         <!-- Shipment bopx -->
         <div class="icon_box">
             <div class="icon">
-                <img src="./Public/Assets/Icons/car.svg" alt="" />
+                <img src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/car.svg' ?>" alt="" />
             </div>
             <p>Unser Außendienst besucht Sie vor-Ort</p>
         </div>
@@ -230,7 +151,8 @@
 <!-- Start newsletter section -->
 <div class="newsletter_section">
     <!-- Top section -->
-    <div class="top_section row" style="background-image: url(./Public/Assets/Icons/Newsletter.svg)">
+    <div class="top_section row"
+        style="background-image: url(<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/Newsletter.svg' ?>)">
         <div class="text_section col-12 col-md-6 col-lg-6">
             <h2>mit unserem Newsletter nichts mehr verpassen!</h2>
         </div>

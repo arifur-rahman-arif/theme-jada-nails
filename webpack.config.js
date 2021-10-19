@@ -3,7 +3,7 @@ const glob = require("glob-all");
 const PATHS = {
     html: path.join(__dirname, "/**.html"),
     scripts: path.join(__dirname, "Src"),
-    includes: path.join(__dirname, "/**.php"),
+    includes: path.join(__dirname, "/**/*.php"),
 };
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");

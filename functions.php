@@ -5,8 +5,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('JADA_NAILS_VERSION')) {
-    // define('JADA_NAILS_VERSION', '1.0.0');
-    define('JADA_NAILS_VERSION', time());
+    define('JADA_NAILS_VERSION', '1.0.0');
 }
 
 if (!defined('JADA_NAILS_PATH')) {
@@ -18,7 +17,7 @@ if (!defined('JADA_NAILS_URL')) {
 }
 
 require_once JADA_NAILS_PATH . 'vendor/autoload.php';
-// require_once JADA_NAILS_PATH . 'Includes/Functions/templateFunctions.php';
+require_once JADA_NAILS_PATH . 'Includes/Functions/templateFunctions.php';
 // require_once JADA_NAILS_PATH . 'Includes/Functions/generalFunctions.php';
 
 new \JadaNails\Includes\Classes\Hooks();

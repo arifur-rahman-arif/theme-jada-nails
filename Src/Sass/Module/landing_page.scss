@@ -31,6 +31,9 @@ header {
         left: 0;
         z-index: 14;
         opacity: 1;
+        box-shadow: 0px -1px 9px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px -1px 9px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -1px 9px -1px rgba(0, 0, 0, 0.75);
     }
     &.sticky_header.mobile_view {
         @media screen and (max-width: 1068px) {
@@ -221,7 +224,7 @@ header {
             justify-content: center;
             align-items: center;
             width: 100%;
-            min-height: 100vh;
+            min-height: 700px;
 
             .mobile_version {
                 display: none;
@@ -247,16 +250,6 @@ header {
             opacity: 1;
             pointer-events: all;
         }
-
-        // .mobile_version {
-        //     // .links {
-
-        //     // }
-
-        //     // .second_list {
-
-        //     // }
-        // }
     }
 }
 
@@ -350,6 +343,7 @@ header {
 .post_box {
     position: relative;
     margin-top: 200px;
+    min-height: 1150px;
 
     & > h1 {
         font: normal normal normal 50px/62px $font_family;
@@ -367,7 +361,7 @@ header {
     }
 
     .wave_2 {
-        top: 25%;
+        top: 33%;
     }
     .wave_3 {
         top: 35%;
