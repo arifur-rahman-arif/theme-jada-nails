@@ -12,7 +12,7 @@ function jada_nails_register_required_plugins() {
             'name'             => 'Kirki Customizer Framework',
             'slug'             => 'kirki',
             'required'         => true,
-            'force_activation' => false
+            'force_activation' => true
         )
 
     );
