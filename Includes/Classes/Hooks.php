@@ -3,10 +3,12 @@
 namespace JadaNails\Includes\Classes;
 
 use JadaNails\Includes\Classes\CallbackFunctions;
+use JadaNails\Includes\Classes\Customizer;
 
 class Hooks {
 
     use CallbackFunctions;
+    use Customizer;
 
     public function __construct() {
         $this->initHooks();
@@ -16,5 +18,6 @@ class Hooks {
     public function initHooks() {
         add_action('wp_enqueue_scripts', [$this, 'enqueueAssetFiles']);
         add_action('after_setup_theme', [$this, 'themeInitCallbacks']);
+        add_action('customize_register', [$this, 'initCustomizer']);
     }
 }

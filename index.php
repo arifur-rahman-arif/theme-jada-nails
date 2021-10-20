@@ -15,17 +15,18 @@
 <?php get_header('header.php')?>
 
 <!-- Hero section  -->
-<div class="hero_section"
-    style="background-image: url(<?php echo JADA_NAILS_URL . 'Public/Assets/Bilder/Header.png' ?>)">
+<div class="hero_section">
+    <img src="<?php echo get_theme_mod('bannerBackground', JADA_NAILS_URL . 'Public/Assets/Bilder/Header.png') ?>"
+        alt="banner_header">
     <div class="content_wrapper">
         <div class="inner_wrapper">
-            <h1 class="hero_text">Ihr Fachhandel für nageldesign</h1>
+            <!-- <h1 class="hero_text">Ihr Fachhandel für nageldesign</h1> -->
+            <h1 class="hero_text">
+                <?php echo esc_html(get_theme_mod('bannerHeader', 'Ihr Fachhandel für nageldesign')) ?></h1>
             <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem sequi
-                mollitia numquam odit aliquid, repudiandae corrupti possimus laudantium, sit
-                commodi consequatur laborum maxime eius.
+                <?php echo esc_html(get_theme_mod('bannerDescription', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy')) ?>
             </p>
-            <a class="hero_btn">direkt zum Shop</a>
+            <a class="hero_btn" href="<?php echo get_theme_mod('bannerBtnURL', '#') ?>">direkt zum Shop</a>
             <img class="scroller" src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/scroller.svg' ?>"
                 alt="scroller" />
         </div>
@@ -36,7 +37,7 @@
 
 
 <!-- Section 2 -->
-<div class="section_2">
+<div class="section_2 mt-5">
     <h1>Das ist JAda Nails</h1>
     <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod

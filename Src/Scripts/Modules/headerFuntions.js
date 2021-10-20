@@ -41,7 +41,7 @@ export function makeHeaderSticky(e) {
 
     if ($(".primary_menu").hasClass("active")) return;
 
-    if (height > 400) {
+    if (height > 450) {
         $(".backgroud_overlay").addClass("active");
         $("header").addClass("sticky_header");
         $(".menu .links li:nth-child(2) > a").addClass("scroll_view_btn");
@@ -53,5 +53,5 @@ export function makeHeaderSticky(e) {
 }
 
 export function scrollDown(e) {
-    $("html, body").animate({ scrollTop: 600 }, "50");
+    $("html, body").animate({ scrollTop: 900 }, "50");
 }

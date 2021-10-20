@@ -5,7 +5,8 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('JADA_NAILS_VERSION')) {
-    define('JADA_NAILS_VERSION', '1.0.0');
+    define('JADA_NAILS_VERSION', '1.1.0');
+    // define('JADA_NAILS_VERSION', time());
 }
 
 if (!defined('JADA_NAILS_PATH')) {
@@ -18,6 +19,7 @@ if (!defined('JADA_NAILS_URL')) {
 
 require_once JADA_NAILS_PATH . 'vendor/autoload.php';
 require_once JADA_NAILS_PATH . 'Includes/Functions/templateFunctions.php';
-// require_once JADA_NAILS_PATH . 'Includes/Functions/generalFunctions.php';
+require_once JADA_NAILS_PATH . 'Includes/TGM-Plugin-Activation-2.6.1-jada-nails/TGM-Plugin-Activation-2.6.1/class-tgm-plugin-activation.php';
+require_once JADA_NAILS_PATH . 'Includes/TGM-Plugin-Activation-2.6.1-jada-nails/TGM-Plugin-Activation-2.6.1/example.php';
 
 new \JadaNails\Includes\Classes\Hooks();
