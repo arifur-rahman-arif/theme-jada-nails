@@ -23,7 +23,11 @@ export function toggleMenu(e) {
         $(".primary_menu").toggleClass("active");
 
         if (!$(".backgroud_overlay").hasClass("active")) {
-            $(".backgroud_overlay").addClass("active");
+            let height = $(window).scrollTop();
+
+            if (height > 450) {
+                $(".backgroud_overlay").addClass("active");
+            }
         } else {
             target.find(".fas").css({
                 color: "#afcb05",
