@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('JADA_NAILS_VERSION')) {
-    define('JADA_NAILS_VERSION', '1.1.0');
+    define('JADA_NAILS_VERSION', '1.1.1');
     // define('JADA_NAILS_VERSION', time());
 }
 
