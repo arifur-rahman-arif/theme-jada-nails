@@ -3,13 +3,13 @@
         min-height: 1485px;
         .scroller {
             transform: scale(1.5);
-            margin-top: 200px;
+            margin-top: 180px;
         }
     }
 
     .post_box {
         .wave_2 {
-            top: 500px;
+            top: 490px;
         }
     }
 }
@@ -32,7 +32,7 @@
 
         .scroller {
             transform: scale(1.1) !important;
-            margin-top: 200px;
+            margin-top: 180px;
         }
     }
     .post_box {
@@ -70,7 +70,7 @@
             font-size: 22px;
         }
         .scroller {
-            margin-top: 0px;
+            margin-top: 100px;
         }
     }
 }
@@ -91,7 +91,14 @@
             transform: translateY(30px);
             margin-right: 30px;
         }
+
+        .primary_menu {
+            .overlay_menu {
+                margin-top: 0;
+            }
+        }
     }
+
     .hero_section {
         margin-top: -400px;
     }
@@ -157,7 +164,7 @@
             top: 27%;
         }
         .wave_3 {
-            top: 35%;
+            top: 600px;
         }
     }
 
@@ -174,7 +181,7 @@
             top: 15%;
         }
         .wave_3 {
-            top: 25%;
+            top: 560px;
         }
     }
 }

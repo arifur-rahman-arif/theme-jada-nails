@@ -15,6 +15,11 @@ export function toggleMenu(e) {
         if ($("header").hasClass("sticky_header")) {
             $("header").addClass("mobile_view");
         }
+
+        // Change the logo color from black to white
+        $(".black_logo_area").css({
+            fill: "#fff",
+        });
     }
 
     if (target.hasClass("mobile_menu")) {
@@ -37,6 +42,11 @@ export function toggleMenu(e) {
         if ($("header").hasClass("sticky_header")) {
             $("header").removeClass("mobile_view");
         }
+
+        // Change the logo color from whitek to black aqain
+        $(".black_logo_area").css({
+            fill: "#7b7a78",
+        });
     }
 }
 

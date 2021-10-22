@@ -11,7 +11,6 @@
 
 ?>
 
-
 <?php get_header('header.php')?>
 
 <!-- Hero section  -->
@@ -27,8 +26,21 @@
                 <?php echo esc_html(get_theme_mod('bannerDescription', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy')) ?>
             </p>
             <a class="hero_btn" href="<?php echo get_theme_mod('bannerBtnURL', '#') ?>">direkt zum Shop</a>
-            <img class="scroller" src="<?php echo JADA_NAILS_URL . 'Public/Assets/Icons/scroller.svg' ?>"
-                alt="scroller" />
+
+            <svg class="scroller" id="Komponente_2_2" data-name="Komponente 2 – 2" xmlns="http://www.w3.org/2000/svg"
+                width="35" height="49" viewBox="0 0 35 49">
+                <g id="Gruppe_10" data-name="Gruppe 10" transform="translate(424.082 -496.869)">
+
+                    <path id="Pfad_19" data-name="Pfad 19"
+                        d="M-406.9,537.838a2.759,2.759,0,0,1-.932-.708q-3.136-3.16-6.278-6.315a1.294,1.294,0,0,1-.076-1.888,1.283,1.283,0,0,1,1.888.049q1.65,1.646,3.288,3.3l1.145,1.153v-.446q0-13.357,0-26.714a1.263,1.263,0,0,1,.689-1.212,1.222,1.222,0,0,1,1.336.084,1.3,1.3,0,0,1,.552,1.163q-.008,9.58,0,19.159v7.9a.746.746,0,0,0,.305-.244c1.377-1.381,2.747-2.769,4.128-4.146a1.288,1.288,0,0,1,2.214.529,1.293,1.293,0,0,1-.4,1.313q-1.942,1.945-3.877,3.9c-.8.805-1.606,1.607-2.4,2.416a2.757,2.757,0,0,1-.933.707Z"
+                        transform="translate(0 0)" fill="#8f9083" />
+                </g>
+                <g id="Rechteck_13" data-name="Rechteck 13" fill="none" stroke="#8f9083" stroke-width="1">
+                    <rect width="35" height="49" rx="17.5" stroke="none" />
+                    <rect x="0.5" y="0.5" width="34" height="48" rx="17" fill="none" />
+                </g>
+            </svg>
+
         </div>
     </div>
 </div>
@@ -53,7 +65,7 @@
     <h1>Kategorien</h1>
     <img class="post_bg_waves wave_1" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_1.svg' ?>" alt="" />
     <img class="post_bg_waves wave_2" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_2.svg' ?>" alt="" />
-    <img class="post_bg_waves wave_3" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_2.svg' ?>" alt="" />
+    <img class="post_bg_waves wave_3" src="<?php echo JADA_NAILS_URL . 'Public/Assets/wave_3.svg' ?>" alt="" />
 
     <div class="web_box_container">
         <?php displayPosts()?>
@@ -66,41 +78,90 @@
     <h1>Neuste Farben</h1>
     <div class="color_box_container">
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #f295ae"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #f295ae"></div>
+            <div class="color_name">Pink Peony</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #efa045"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #efa045"></div>
+            <div class="color_name">Orange</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #8e2f24"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #8e2f24"></div>
+            <div class="color_name">Mint</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #f295ae"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #f295ae"></div>
+            <div class="color_name">Red Wine</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #ffffff"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #ffffff"></div>
+            <div class="color_name">Marshmellow</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #a7ccd9"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #a7ccd9"></div>
+            <div class="color_name">Sky</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #607aaf"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #607aaf"></div>
+            <div class="color_name">Royayl Blue</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #9b8f82"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #9b8f82"></div>
+            <div class="color_name">Earth</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #fbd026"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #fbd026"></div>
+            <div class="color_name">Bright Sun</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #cfcfcf"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #cfcfcf"></div>
+            <div class="color_name">cloudy</div>
+        </div>
         <!-- End color box -->
+
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #d4cec2"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #d4cec2"></div>
+            <div class="color_name">Beige</div>
+        </div>
         <!-- End color box -->
+
         <!-- Start color box -->
-        <div class="color_box" style="background-color: #802e51"></div>
+        <div class="color_box_wrapper">
+            <div class="color_box" style="background-color: #802e51"></div>
+            <div class="color_name">Grape</div>
+        </div>
         <!-- End color box -->
+
     </div>
 </div>
 <!-- End of color section -->
